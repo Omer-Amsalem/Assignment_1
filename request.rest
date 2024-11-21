@@ -1,0 +1,12 @@
+### Add a new post
+POST http://localhost:3000/post/
+Content-Type: application/json
+
+{
+    "message": "Bake post.",
+    "sender": "456"
+}
+###
+### Get all posts 
+GET http://localhost:3000/post/ 
+###

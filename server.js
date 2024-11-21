@@ -1,6 +1,7 @@
 import dotenv from 'dotenv';
 import express from 'express';
 import mongoose from 'mongoose';
+import postRoutes from './routes/postRoute.js';
 
 dotenv.config();
 
@@ -18,7 +19,7 @@ mongoose
   .catch((err) => console.error('MongoDB connection failed:', err));
 
 // Routes
-
+app.use('/post', postRoutes);
 // Start the server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
