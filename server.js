@@ -2,6 +2,7 @@ import dotenv from 'dotenv';
 import express from 'express';
 import mongoose from 'mongoose';
 import postRoutes from './routes/postRoute.js';
+import commentRoutes from './routes/commentRoute.js';
 
 dotenv.config();
 
@@ -20,6 +21,7 @@ mongoose
 
 // Routes
 app.use('/post', postRoutes);
+app.use('/comment', commentRoutes);
 // Start the server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

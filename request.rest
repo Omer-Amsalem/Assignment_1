@@ -3,8 +3,8 @@ POST http://localhost:3000/post/
 Content-Type: application/json
 
 {
-    "message": "Bake post.",
-    "sender": "456"
+    "message": "Cake post.",
+    "sender": "159"
 }
 ###
 ### Get all posts 
@@ -34,9 +34,9 @@ POST http://localhost:3000/comment/
 Content-Type: application/json
 
 {
-  "message": "Test great",
-  "sender": "1234",
-  "post": "673a12dc4c23bab6e22b6ab2"
+  "message": "Looks good",
+  "sender": "565",
+  "post": "673a15cb5c1f38117915432f"
 }
 ###
 
